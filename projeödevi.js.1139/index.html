@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1139P</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body id="Home">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="#Home"><img
+                    src="data:image/png;base64,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"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item px-3 fs-5">
+                        <a class="nav-link active" aria-current="page" href="#">Futbol</a>
+                    </li>
+                    <li class="nav-item px-3 fs-5">
+                        <a class="nav-link active" href="#">Basketbol</a>
+                    </li>
+                    <li class="nav-item px-3 fs-5">
+                        <a class="nav-link active" href="#">Voleybol</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="p-5">
+        <div class="container">
+            <h1 class="text-center pb-2 fw-bolder">Maç skoru</h1>
+            <div class="text-center pb-5 fs-2"><span id="TeamAScore">0</span>-<span id="TeamBScore">0</span></div>
+            <div class="row">
+                <div class="col-6 col-lg-3 text-center justify-content-center">
+                    <div class="fs-1 mt-2" id="TeamA">Takım A</div>
+                    <div class="mt-3 row">
+                        <div class="col-12"><button type="button" onclick="myFunction()" class="btn btn-dark my-3 col-12">Gooool</button></div>
+                        <div class="col-12"><button type="button" onclick="myFunction2()" class="btn btn-dark my-3 col-12">Gol iptal</button></div>
+                        <div class="col-12"><button type="button" onclick="myFunction3()" class="btn btn-dark my-3 col-12">Kaç gol oldu?</button></div>
+                        <div class="col-12"><button type="button" onclick="myFunction4()" class="btn btn-dark my-3 col-12">Takım adını değiştir</button></div>    
+                       
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 order-first order-lg-0"><img
+                        src="https://st3.depositphotos.com/24071922/37023/i/450/depositphotos_370235752-stock-photo-football-football-field-top-light.jpg"
+                        alt=""></div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="fs-1 mt-2" id="TeamB">Takım B</div>
+                    <div class="mt-3 row">
+                        <div class="col-12"><button type="button" onclick="myFunction5()" class="btn btn-dark m-2 my-3 col-12" id="buttonThree">Gooool</button></div>
+                        <div class="col-12"><button type="button" onclick="myFunction6()" class="btn btn-dark m-2 my-3 col-12" id="buttonFour">Gol iptal</button></div>
+                        <div class="col-12"><button type="button" onclick="myFunction7()" class="btn btn-dark m-2 my-3 col-12" id="buttonFour">Kaç gol oldu?</button></div>
+                        <div class="col-12"><button type="button" onclick="myFunction8()" class="btn btn-dark m-2 my-3 col-12" id="buttonFour">Takım adını değiştir</button></div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
